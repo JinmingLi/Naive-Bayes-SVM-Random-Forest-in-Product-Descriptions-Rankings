@@ -1,1 +1,9 @@
 # Naive-Bayes-SVM-and-Random-Forest-in-Product-Descriptions-and-Rankings
+
+In my independent research Empirical Analysis on Product Ranking System of B2B E-commerce Platform--based on Machine Learning Methods, I tried to analyze the potential relationship between product descriptions and product rankings using machine leaning methods in R since better descriptions attract customers and help products rank prior. 
+
+In text data preprocessing, I extracted the text information from Alibaba B2B platform where I selected 50 kinds of category. Each category had 20 products in the first page which I labeled them as “1” and 20 products in the last page which I labeled them as “0”.
+
+In R code, I carried out text data preprocessing including cutting word (self-assigned phrases and stop words), eliminating numbers, alphabets and null character, converting cut words into corpus. Then I established document-term matrix using TF-IDF and WF method and controlled the matrix dimension sparsity to be 100 words. Therefore, the dataset was a 2,000 by 101 data frame.
+
+In the next part of R code, I divided the dataset to be 75% training set and 25% testing set and then I classified the dataset with three classifiers: Naïve Bayes, SVM and Random Forest. After that, I used the classifiers learned from training set to predict testing set and visualized the classification outputs through computing confusion matrix, mapping ROC curve and computing AUC value. The accuracy for each classification algorithm is 98.4% for Naïve Bayes, 99.8% for Random Forest and 93.8% for SVM with linear kernel. Since I am a big fan of SVM, I decided to employ (gaussian) radial basis function kernel to optimize the classification results. I tuned the parameters of SVM and found the best parameter were gamma = 0.001, cost = 100. Using these parameters, the accuracy of SVM with radial basis function kernel went up to 95%. 
