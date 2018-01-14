@@ -1,6 +1,6 @@
 # Naive-Bayes-SVM-and-Random-Forest-in-Product-Descriptions-and-Rankings
 
-In my independent research Empirical Analysis on Product Ranking System of B2B E-commerce Platform--based on Machine Learning Methods, I tried to analyze the potential relationship between product descriptions and product rankings using machine leaning methods in R since better descriptions attract customers and help products rank prior. 
+In my independent research Empirical Analysis on Product Ranking System of B2B E-commerce Platform--based on Machine Learning Methods, I tried to analyze the potential relationship between product descriptions and product rankings using machine leaning methods in R since better descriptions attract more customers and help products rank prior. 
 
 In text data preprocessing, I extracted the text information from Alibaba B2B platform where I selected 50 kinds of category. Each category had 20 products in the first page which I labeled them as “1” and 20 products in the last page which I labeled them as “0”.
 
